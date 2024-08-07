@@ -1,0 +1,258 @@
+body {
+    margin: 0 auto;
+    overflow-y: scroll;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bank_header {
+    background-color: rgb(228, 88, 88);
+    padding-bottom: 10px;
+    margin-bottom: 3%;
+}
+
+.bank_title {
+    color: rgba(255, 255, 255);
+    font-size: 72px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: auto;
+}
+
+.bank_logo {
+    margin: auto;
+}
+
+.bank_container {
+    display: flex;
+    justify-content: center;
+    height: 67vh;
+}
+
+.bank_container div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bank_container_button {
+    text-align: center;
+}
+
+.bank_subtitle{
+    color: rgb(0, 0, 0, 0.67);
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bank_container p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.team_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  }
+
+#name, #balance, #bank, #request_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.request_button {
+    background: #E45858;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 8px;
+    max-width: 247px;
+    max-height: 48px;
+    padding: 12px 16px 12px 16px;
+    gap: 8px;
+    box-shadow: 0px 8px 20px 0px rgba(78, 96, 255, 0.16);
+    transition: ease 0.3s all;
+}
+
+.request_button:hover {
+    background: #d84141;
+    cursor: pointer;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирует элементы по горизонтали */
+    text-align: center; /* Центрирует текст внутри элемента */
+    }
+  label, input, select {
+    margin: 5px 0;
+}
+
+  .bank_container label {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.form-group-operations {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-group_bank {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* Расположение элементов в две колонки */
+    .form-group_bank_container {
+        display: flex;
+    }
+
+    .form-group_bank_column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 500px;
+    }
+
+    /* Расстояние между колонками */
+    .form-group_bank_column + .form-group_bank_column {
+        margin-left: 40px;
+    }
+
+.bank_container input {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    border-radius: 8px;
+    border: 1px solid #C7C8D2;
+    padding: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+.bank_container select, option {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200px;
+    border: 1px solid #C7C8D2;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+.done_button {
+    background: #E45858;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 8px;
+    max-width: 247px;
+    max-height: 48px;
+    padding: 12px 16px 12px 16px;
+    gap: 8px;
+    box-shadow: 0px 8px 20px 0px rgba(78, 96, 255, 0.16);
+    transition: ease 0.3s all;
+    margin: 20px
+}
+
+.done_button:hover {
+    background: #d84141;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #yes_button, #no_button {
+    background: #E45858;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 8px;
+    width: 60px;
+    padding: 3px;
+    font-size: 16px;
+    margin:5px;
+  }
+
+.year {
+    text-align: left;
+    position: absolute;
+    color: rgb(0, 0, 0, 0.67);
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 20px;
+}

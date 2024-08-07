@@ -1,0 +1,53 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Стили для таблицы */
+table.main {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table.main th, table.main td {
+    padding: 10px 15px;
+    text-align: center;
+    color: #333333;
+}
+
+table.main th {
+    background-color: #5E80B0;
+    color: #fff;
+}
+
+table.main tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.main tr:hover {
+    background-color: #ddd;
+}
+
+/* Стили для заголовка */
+h1 {
+    text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+a.team-name {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+td.team-name:hover {
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}

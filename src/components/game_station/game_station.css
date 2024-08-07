@@ -1,0 +1,198 @@
+body {
+    margin: 0 auto;
+    overflow-y: scroll;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gamestation_header {
+    background-color: rgb(214, 27, 83);
+    padding-bottom: 10px;
+    margin-bottom: 3%;
+}
+
+.gamestation_title {
+    color: rgba(255, 255, 255);
+    font-size: 72px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: auto;
+}
+
+.head {
+  display: inline-flex;
+  align-items: center;
+}
+
+.gamestation_logo {
+    margin: auto;
+}
+
+.team_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  }
+
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#name, #balance, #request_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.request_button {
+    background: #E45858;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 8px;
+    max-width: 247px;
+    max-height: 48px;
+    padding: 12px 16px 12px 16px;
+    gap: 8px;
+    box-shadow: 0px 8px 20px 0px rgba(78, 96, 255, 0.16);
+    transition: ease 0.3s all;
+}
+
+.request_button:hover {
+    background: #d84141;
+    cursor: pointer;
+}
+
+.gamestation_container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.gamestation_container div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.gamestation_container_button {
+    text-align: center;
+}
+
+.gamestation_subtitle{
+    color: rgb(0, 0, 0, 0.67);
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+}
+
+  label, input, select {
+    margin: 5px 0;
+}
+
+  .gamestation_container label {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.gamestation_container input {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    border-radius: 8px;
+    border: 1px solid #C7C8D2;
+    padding: 5px;
+}
+
+.gamestation_container select, option {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    border: 1px solid #C7C8D2;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.done_button {
+    background: #E45858;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 8px;
+    max-width: 247px;
+    max-height: 48px;
+    padding: 12px 16px 12px 16px;
+    gap: 8px;
+    box-shadow: 0px 8px 20px 0px rgba(78, 96, 255, 0.16);
+    transition: ease 0.3s all;
+}
+
+.done_button:hover {
+    background: #d84141;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #yes_button, #no_button {
+    background: #E45858;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 8px;
+    width: 60px;
+    padding: 3px;
+    font-size: 16px;
+    margin:5px;
+  }

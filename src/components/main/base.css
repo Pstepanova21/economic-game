@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+@font-face {
+    font-family: "Donpoligrafbum Bold";
+    src: url("../../assets/Donpoligrafbum-Bold.otf");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+b {
+  font-weight: bold;
+}
+
+.main_header {
+    margin-bottom: 4px;
+}
+
+body {
+  font: normal 18px 'Open Sans', sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  width: 6%;
+  height: 6%;}
+
+.desktop-header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: #1c1c1c;
+}
+
+.main_header {
+  font-size: 45px;
+  font-family: Donpoligrafbum Bold;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  flex-grow: 1;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+}
+
+   nav a::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right:0;
+     height: 2px;
+     transform: scaleX(0);
+     background: #333;
+     transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+   }
+
+nav a:hover::after{
+  transform: scaleX(1)
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding-top: 10px;
+}
+.container-header img {
+  margin-right: 20px; 
+}
+.main_header .year_20 {
+  color: #0d41b3;
+}
+.main_header .year_24 {
+  color: #b63910;
+}
+
+
+@media (max-width: 768px) {
+  img.displayed {
+    width: 40px;
+    height: 40px;
+  }
+
+  .desktop-header {
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+ /*768px*/
+    @media screen and (max-width: 768px) {
+        .desktop-header {
+            font-size: 32px;
+        }
+    }
+    @media screen and (max-width: 428px) {
+        .desktop-header {
+            font-size: 18px;
+        }
+    }
+
+
+@media screen and (max-width: 600px) {
+    .desktop-header {
+        margin-top: 28px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .desktop-header {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .desktop-header {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+}
