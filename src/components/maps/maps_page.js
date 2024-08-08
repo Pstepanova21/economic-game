@@ -1,6 +1,39 @@
 import React, { useState, useEffect } from "react";
 import reumap from "../../assets/image/maps/reumap.png";
 import itcLogo from "../../assets/image/main/itc.png";
+import corpus1_floor0 from "../../assets/image/maps/corpus/1/corpus1-floor0.png";
+import corpus1_floor1 from "../../assets/image/maps/corpus/1/corpus1-floor1.png";
+import corpus1_floor2 from "../../assets/image/maps/corpus/1/corpus1-floor2.png";
+import corpus2_floor2 from "../../assets/image/maps/corpus/2/corpus2-floor2.png";
+import corpus3_floor1 from "../../assets/image/maps/corpus/3/corpus3-floor1.png";
+import corpus3_floor2 from "../../assets/image/maps/corpus/3/corpus3-floor2.png";
+import corpus3_floor3 from "../../assets/image/maps/corpus/3/corpus3-floor3.png";
+import corpus3_floor4 from "../../assets/image/maps/corpus/3/corpus3-floor4.png";
+import corpus3_floor5 from "../../assets/image/maps/corpus/3/corpus3-floor5.png";
+import corpus3_floor6 from "../../assets/image/maps/corpus/3/corpus3-floor6.png";
+import corpus6_floor1 from "../../assets/image/maps/corpus/6/corpus6-floor1.png";
+import corpus6_floor2 from "../../assets/image/maps/corpus/6/corpus6-floor2.png";
+import corpus6_floor3 from "../../assets/image/maps/corpus/6/corpus6-floor3.png";
+import corpus8_floor2 from "../../assets/image/maps/corpus/8/corpus8-floor2.png";
+import corpus8_floor3 from "../../assets/image/maps/corpus/8/corpus8-floor3.png";
+
+const imagePaths = {
+  "corpus1-floor0": corpus1_floor0,
+  "corpus1-floor1": corpus1_floor1,
+  "corpus1-floor2": corpus1_floor2,
+  "corpus2-floor2": corpus2_floor2,
+  "corpus3-floor1": corpus3_floor1,
+  "corpus3-floor2": corpus3_floor2,
+  "corpus3-floor3": corpus3_floor3,
+  "corpus3-floor4": corpus3_floor4,
+  "corpus3-floor5": corpus3_floor5,
+  "corpus3-floor6": corpus3_floor6,
+  "corpus6-floor1": corpus6_floor1,
+  "corpus6-floor2": corpus6_floor2,
+  "corpus6-floor3": corpus6_floor3,
+  "corpus8-floor2": corpus8_floor2,
+  "corpus8-floor3": corpus8_floor3,
+};
 
 const availableFloors = {
   corpus1: [0, 1, 2],
@@ -20,7 +53,7 @@ const mapDescriptions = {
         "4.\tСПОРТКОМ — <span class=dif2>100%</span> — 40<br>\n" +
         "5.\tМузыкальный полиглот — <span class=dif3>150%</span> — 41<br>\n" +
         "6.\tАлгоРИТМЫ — <span class=dif2>100%</span> — 62<br>\n",
-      image: "static/image/maps/corpus/1/corpus1-floor0.png",
+      image: imagePaths["corpus1-floor0"],
     },
     floor1: {
       description:
@@ -29,7 +62,7 @@ const mapDescriptions = {
         "3.\tРисуночное письмо — <span class=dif1>50%</span> — 153<br>\n" +
         "4.\tКлючи — <span class=dif4>200%</span> — 155<br>\n" +
         "5.\tОбрыв — <span class=dif4>200%</span> — 159<br>\n",
-      image: "static/image/maps/corpus/1/corpus1-floor1.png",
+      image: imagePaths["corpus1-floor1"],
     },
     floor2: {
       description:
@@ -37,7 +70,7 @@ const mapDescriptions = {
         "2.\tГде логика? — <span class=dif3>150%</span> — 212<br>\n" +
         "3.\tВШЭиБ — <span class=dif1>50%</span> — 239<br>\n" +
         "4.\tLanguage Club — <span class=dif2>100%</span> — 252<br>\n",
-      image: "static/image/maps/corpus/1/corpus1-floor2.png",
+      image: imagePaths["corpus1-floor2"],
     },
   },
   corpus2: {
@@ -46,7 +79,7 @@ const mapDescriptions = {
         "1.\tСинонимайзер — <span class=dif3>150%</span> — 245<br>\n" +
         "2.\tВШКИ — <span class=dif1>50%</span> — 246<br>\n" +
         "3.\tСоздай хит — <span class=dif3>150%</span> — 253<br>\n",
-      image: "static/image/maps/corpus/2/corpus2-floor2.png",
+      image: imagePaths["corpus2-floor2"],
     },
   },
   corpus3: {
@@ -55,7 +88,7 @@ const mapDescriptions = {
         "1.\tПапина олимпийка — <span class='dif1'>50%</span> — 101<br>\n" +
         "2.\tМистер РЭУ — <span class='dif2'>100%</span> — 102<br>\n" +
         "3.\tH&M вернулся! — <span class='dif1'>50%</span> — 103<br>\n",
-      image: "static/image/maps/corpus/3/corpus3-floor1.png",
+      image: imagePaths["corpus3-floor1"],
     },
     floor2: {
       description:
@@ -70,7 +103,7 @@ const mapDescriptions = {
         "9.\tИПАМ — <span class=dif1>50%</span> — 222<br>\n" +
         "10.\tВолонтерский центр РЭУ — <span class=dif2>100%</span> — 223<br>\n" +
         "11.\tВШМ — <span class=dif1>50%</span> — 225<br>\n",
-      image: "static/image/maps/corpus/3/corpus3-floor2.png",
+      image: imagePaths["corpus3-floor2"],
     },
     floor3: {
       description:
@@ -80,115 +113,102 @@ const mapDescriptions = {
         '4.\tВШ "Форсайт" — <span class=dif1>50%</span> — 311<br>\n' +
         "5.\tВШП — <span class=dif1>50%</span> — 313<br>\n" +
         '6.\tВИШ "НМиТ" — <span class=dif1>50%</span> — 315<br>\n' +
-        "7.\tНазад в прошлое — <span class=dif1>50%</span> — 317<br>\n" +
-        "8.\tМамин буквоед — <span class=dif2>100%</span> — 321<br>\n" +
-        "9.\tBUDDY SYSTEM — <span class=dif2>100%</span> — 323<br>\n" +
-        "10.\tДолг платежом красен — <span class=dif2>100%</span> — 325<br>\n" +
-        "11.\tМузыкальный синонимайзер — <span class=dif1>50%</span> — 327<br>\n" +
-        "12.\tКому на экономической игре жить хорошо... — <span class=dif4>200%</span> — 329<br>\n" +
-        "13.\tМолодые режиссеры — <span class=dif2>100%</span> — 331<br>\n" +
-        "14.\tФБ Капитаны — <span class=dif1>50%</span> — 333<br>\n" +
-        "15.\tПопробуй почувствуй — <span class=dif1>50%</span> — 335<br>\n",
-      image: "static/image/maps/corpus/3/corpus3-floor3.png",
+        "7.\tЦМТО — <span class=dif2>100%</span> — 317<br>\n" +
+        "8.\tВШНМиИТ — <span class=dif1>50%</span> — 318<br>\n" +
+        "9.\tВШФ — <span class=dif1>50%</span> — 319<br>\n" +
+        "10.\tСБР — <span class=dif2>100%</span> — 320<br>\n" +
+        "11.\tПрофком — <span class=dif1>50%</span> — 323<br>\n" +
+        "12.\tЭКОСОФТ — <span class=dif2>100%</span> — 325<br>\n" +
+        "13.\tРЭУ Times — <span class=dif2>100%</span> — 326<br>\n" +
+        "14.\tЦАОС — <span class=dif2>100%</span> — 327<br>\n" +
+        "15.\tИНИТ — <span class=dif2>100%</span> — 329<br>\n" +
+        "16.\tПараграф — <span class=dif2>100%</span> — 330<br>\n",
+      image: imagePaths["corpus3-floor3"],
     },
     floor4: {
       description:
-        "1.\tКлючевое слово — <span class=dif1>50%</span> — 405<br>\n" +
-        "2.\tКлуб болельщиков — <span class=dif2>100%</span> — 407<br>\n" +
-        "3.\tШВ — <span class=dif2>100%</span> — 409<br>\n" +
-        "4.\tГромкий вопрос — <span class=dif3>150%</span> — 410<br>\n" +
-        "5.\tКМК — <span class=dif2>100%</span> — 411<br>\n" +
-        "6.\tS class — <span class=dif4>200%</span> — 415<br>\n" +
-        "7.\tСоциальный комитет — <span class=dif2>100%</span> — 429<br>\n" +
-        "8.\tПомоги понять — <span class=dif1>50%</span> — 433<br>\n" +
-        "9.\tМемология 2.0 — <span class=dif4>200%</span> — 435<br>\n" +
-        "10.\tМинное поле — <span class=dif4>200%</span> — 437<br>\n" +
-        "11.\tСила в правде — <span class=dif1>50%</span> — 447<br>\n" +
-        "12.\tPlekhanov Case Club — <span class=dif2>100%</span> — 449<br>\n" +
-        "13.\tОтгадай, если сможешь — <span class=dif1>50%</span> — 451<br>\n" +
-        "14.\tПодъем! — <span class=dif1>50%</span> — 453<br>\n" +
-        "15.\tДавайте рисовать — <span class=dif1>50%</span> — 428<br>\n" +
-        "16.\tFFM — <span class=dif2>100%</span> — 431<br>\n",
-      image: "static/image/maps/corpus/3/corpus3-floor4.png",
+        "1.\tИнтерклуб — <span class=dif1>50%</span> — 404<br>\n" +
+        "2.\tЦРиМП — <span class=dif3>150%</span> — 405<br>\n" +
+        "3.\tКнижная эйфория — <span class=dif1>50%</span> — 406<br>\n" +
+        "4.\tЦМО — <span class=dif1>50%</span> — 407<br>\n" +
+        "5.\tЦентр карьеры — <span class=dif1>50%</span> — 410<br>\n" +
+        "6.\tСТАРТ — <span class=dif1>50%</span> — 413<br>\n",
+      image: imagePaths["corpus3-floor4"],
     },
     floor5: {
       description:
-        "1.\tStudent Show — <span class=dif2>100%</span> — 506<br>\n" +
-        "2.\tКто здесь? — <span class=dif1>50%</span> — 501<br>\n",
-      image: "static/image/maps/corpus/3/corpus3-floor5.png",
+        "1.\tПойми меня — <span class=dif2>100%</span> — 501<br>\n" +
+        "2.\tНА ГРАНИ — <span class=dif2>100%</span> — 503<br>\n" +
+        "3.\tMafia — <span class=dif2>100%</span> — 507<br>\n" +
+        "4.\tФакультет права — <span class=dif2>100%</span> — 511<br>\n" +
+        "5.\tДавай уже учиться — <span class=dif1>50%</span> — 514<br>\n" +
+        "6.\tЦПИ — <span class=dif1>50%</span> — 515<br>\n" +
+        "7.\tМежфак — <span class=dif1>50%</span> — 516<br>\n" +
+        "8.\tПрофориентатор — <span class=dif1>50%</span> — 517<br>\n" +
+        "9.\tИМС — <span class=dif1>50%</span> — 520<br>\n",
+      image: imagePaths["corpus3-floor5"],
     },
     floor6: {
       description:
-        "1.\tВШКМиС — <span class=dif1>50%</span> — 605<br>\n" +
-        "2.\tБогатым быть не запретишь — <span class=dif1>50%</span> — 607<br>\n" +
-        "3.\tВШФ — <span class=dif1>50%</span> — 609<br>\n" +
-        "4.\tСекретарская академия — <span class=dif2>100%</span> — 611<br>\n" +
-        "5.\t2 правды 1 ложь — <span class=dif2>100%</span> — 623<br>\n" +
-        "6.\tВалютный банк — <span class=dif2>100%</span> — 625<br>\n" +
-        "7.\tВШСГН — <span class=dif1>50%</span> — 633<br>\n" +
-        "8.\tМисс Плехановский университет — <span class=dif2>100%</span> — 635<br>\n" +
-        "9.\tЦентр гражданско-патриотического воспитания — <span class=dif2>100%</span> — 637<br>\n" +
-        "10.\tОбщежития — <span class=dif2>100%</span> — 616<br>\n",
-      image: "static/image/maps/corpus/3/corpus3-floor6.png",
+        "1.\tВолонтерский центр РЭУ — <span class=dif2>100%</span> — 603<br>\n" +
+        "2.\tГлобальные партнерства — <span class=dif1>50%</span> — 604<br>\n" +
+        "3.\tРЭУ Times — <span class=dif1>50%</span> — 605<br>\n" +
+        "4.\tЛига РЭУ — <span class=dif2>100%</span> — 606<br>\n" +
+        "5.\tЦМО — <span class=dif2>100%</span> — 607<br>\n",
+      image: imagePaths["corpus3-floor6"],
     },
   },
   corpus6: {
     floor1: {
       description:
-        "1.\tСто к одному — <span class='dif2'>100%</span> — 132 <br>",
-      image: "static/image/maps/corpus/6/corpus6-floor1.png",
+        "1.\tХимич — <span class=dif1>50%</span> — 123<br>\n" +
+        "2.\tКиноман — <span class=dif2>100%</span> — 124<br>\n" +
+        "3.\tСпортинвентарь — <span class=dif2>100%</span> — 126<br>\n",
+      image: imagePaths["corpus6-floor1"],
     },
     floor2: {
       description:
-        "1.\tКто я? — <span class=dif1>50%</span> — 229<br>\n" +
-        "2.\tМеломан — <span class=dif5>служба занятости</span>  — 231<br>\n" +
-        "3.\tВечеринка — <span class=dif1>50%</span> — 232<br>\n" +
-        "4.\tКПС — <span class=dif2>100%</span> — 240<br>\n" +
-        "5.\tЧуткость слуха — <span class=dif4>200%</span> — 260<br>\n" +
-        "6.\tКВН — <span class=dif2>100%</span> — 261<br>\n" +
-        "7.\tВолонтерский центр РЭУ — <span class=dif2>100%</span> — 265<br>\n" +
-        "8.\tУгадай фильм — <span class=dif3>150%</span> — 266<br>\n" +
-        "9.\tСНО — <span class=dif2>100%</span>— 233<br>\n",
-      image: "static/image/maps/corpus/6/corpus6-floor2.png",
+        "1.\tРЭУшечка — <span class=dif1>50%</span> — 227<br>\n" +
+        "2.\tАгентство Книги — <span class=dif2>100%</span> — 228<br>\n" +
+        "3.\tВдохновение — <span class=dif2>100%</span> — 229<br>\n" +
+        "4.\tЦентр тестирования — <span class=dif2>100%</span> — 230<br>\n",
+      image: imagePaths["corpus6-floor2"],
     },
     floor3: {
       description:
-        "1.\tГород со странностями — <span class=dif3>150%</span> — 349<br>\n" +
-        "2.\tТвой ход — <span class=dif2>100%</span> — 324<br>\n" +
-        "3.\tПлехановский клуб знатоков — <span class=dif2>100%</span> — 326<br>\n" +
-        "4.\tREU Data Science Club — <span class=dif2>100%</span> — 357<br>\n" +
-        "5.\tУдержи если сможешь — <span class=dif2>100%</span> — 363<br>\n",
-      image: "static/image/maps/corpus/6/corpus6-floor3.png",
+        "1.\tСМИ — <span class=dif1>50%</span> — 329<br>\n" +
+        "2.\tСПО — <span class=dif2>100%</span> — 330<br>\n" +
+        "3.\tИздательство — <span class=dif1>50%</span> — 331<br>\n" +
+        "4.\tШтаб волонтеров — <span class=dif2>100%</span> — 332<br>\n",
+      image: imagePaths["corpus6-floor3"],
     },
   },
   corpus8: {
     floor2: {
       description:
-        "1.\tМемология — <span class=dif1>50%</span> — 205<br>\n" +
-        "2.\tСТО — <span class=dif2>100%</span> — 206<br>\n",
-      image: "static/image/maps/corpus/8/corpus8-floor2.png",
+        "1.\tВторое дыхание — <span class=dif1>50%</span> — 220<br>\n" +
+        "2.\tКультура добра — <span class=dif2>100%</span> — 221<br>\n" +
+        "3.\tДелопроизводство — <span class=dif1>50%</span> — 222<br>\n",
+      image: imagePaths["corpus8-floor2"],
     },
     floor3: {
       description:
-        "1.\tЦВСК — <span class=dif2>100%</span> — 301<br>\n" +
-        "2.\tСтуденческие парламентские клубы — <span class=dif2>100%</span> — 302<br>\n" +
-        "3.\tПШБ «Интеграл» — <span class=dif1>50%</span> — 305<br>\n" +
-        "4.\tКлуб дебатов — <span class=dif2>100%</span> — 308<br>\n" +
-        "5.\tПомощь в офисе — <span class=dif5>служба занятости</span> — 311<br>\n" +
-        "6.\tВокруг света — <span class=dif3>150%</span> — 312<br>\n",
-      image: "static/image/maps/corpus/8/corpus8-floor3.png",
+        "1.\tСолнечные ребята — <span class=dif1>50%</span> — 320<br>\n" +
+        "2.\tБухгалтера — <span class=dif2>100%</span> — 321<br>\n" +
+        "3.\tУютное место — <span class=dif2>100%</span> — 322<br>\n",
+      image: imagePaths["corpus8-floor3"],
     },
   },
 };
 
 const MapsPage = () => {
-  const [selectedCorpus, setSelectedCorpus] = useState("corpus3");
-  const [selectedFloor, setSelectedFloor] = useState(2);
+  const [selectedCorpus, setSelectedCorpus] = useState("corpus1");
+  const [selectedFloor, setSelectedFloor] = useState(0);
   const [description, setDescription] = useState(
-    mapDescriptions["corpus3"]["floor2"].description
+    mapDescriptions["corpus1"]["floor0"].description
   );
   const [image, setImage] = useState(
-    mapDescriptions["corpus3"]["floor2"].image
+    mapDescriptions["corpus1"]["floor0"].image
   );
 
   useEffect(() => {

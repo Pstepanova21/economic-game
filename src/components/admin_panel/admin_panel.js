@@ -1,17 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import logo from "../../assets/image/icon/itc.png"; // Измените путь к вашему изображению
 
-const AdminPanel = ({ team }) => {
+const AdminPanel = () => {
+  const [teams, setTeams] = useState([]);
+
+  useEffect(() => {
+    // Получите данные команд из вашего API
+    fetch("/api/teams/") // Измените URL на ваш API endpoint
+      .then((response) => response.json())
+      .then((data) => setTeams(data))
+      .catch((error) =>
+        console.error("Ошибка при получении данных команд:", error)
+      );
+  }, []);
+
   return (
     <div>
-      <head>
-        <title>Admin Panel</title>
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href="/static/image/icon/itc.ico"
-        />
-      </head>
+      <img src={logo} alt="Logo" />
       <h1>Admin Panel</h1>
       <table className="main">
         <thead>
@@ -24,20 +29,17 @@ const AdminPanel = ({ team }) => {
           </tr>
         </thead>
         <tbody>
-          {team.map((teamInfo) => (
-            <tr key={teamInfo.team_id}>
-              <td>{teamInfo.team_id}</td>
+          {teams.map((team) => (
+            <tr key={team.team_id}>
+              <td>{team.team_id}</td>
               <td className="team-name">
-                <Link
-                  className="team-name"
-                  to={`/bank?team_id=${teamInfo.team_id}`}
-                >
-                  {teamInfo.team_name}
-                </Link>
+                <a className="team-name" href={`/bank?team_id=${team.team_id}`}>
+                  {team.team_name}
+                </a>
               </td>
-              <td>{teamInfo.team_balance}</td>
-              <td>{teamInfo.team_credit}</td>
-              <td>{teamInfo.team_deposit}</td>
+              <td>{team.team_balance}</td>
+              <td>{team.team_credit}</td>
+              <td>{team.team_deposit}</td>
             </tr>
           ))}
         </tbody>

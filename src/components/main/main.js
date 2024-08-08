@@ -6,24 +6,22 @@ const HomePage = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    // Функция для генерации случайных чисел
-    const random = (min, max) => Math.random() * (max - min) + min;
+    // Функция для генерации уникальных случайных чисел
+    const generateUniqueRandomNumbers = (count, max) => {
+      const numbers = new Set();
+      while (numbers.size < count) {
+        numbers.add(Math.floor(Math.random() * max) + 1);
+      }
+      return Array.from(numbers);
+    };
 
-    const range = 21; // максимальное значение (1..1000000 включительно)
+    const range = 21; // максимальное значение (1..21 включительно)
     const count = 15; // кол-во требуемых чисел
 
-    let m = {};
-    let a = [];
-    for (let i = 0; i < count; ++i) {
-      let r = Math.floor(Math.random() * (range - i));
-      a.push((r in m ? m[r] : r) + 1);
-      let l = range - i - 1;
-      m[r] = l in m ? m[l] : l;
-    }
+    const uniqueNumbers = generateUniqueRandomNumbers(count, range);
 
-    const imgSources = Array.from(
-      { length: 15 },
-      (_, index) => `static/image/main/main${a[index]}.jpg`
+    const imgSources = uniqueNumbers.map(
+      (number) => `../../assets/image/main/main${number}.jpg`
     );
 
     setImages(imgSources);
@@ -31,19 +29,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <header className="desktop-header">
-        <img className="displayed" src="static/image/main/logo.svg" alt="..." />
-        <h1 className="main_text">Экономическая игра 2023</h1>
-        <nav>
-          <a href="/">Главная</a>
-          <a href="/stocks">Акции</a>
-          <a href="/maps">Карта</a>
-          <a href="/manual">Инструкции</a>
-          <a href="/login">
-            <b>Вход</b>
-          </a>
-        </nav>
-      </header>
       <div className="gridsection">
         <h2 className="blockname">ЭИ СКВОЗЬ ГОДА</h2>
         <main className="grid">

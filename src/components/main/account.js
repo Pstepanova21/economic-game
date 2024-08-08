@@ -1,5 +1,5 @@
 import React from "react";
-import profileBanner1 from "../../assets/image/itbanner1.png";
+import profileBanner1 from "../../assets/image/account/profilebanner1.png";
 import profileBanner from "../../assets/image/account/profilebanner.png";
 import itcLogo from "../../assets/image/main/itc.png";
 
