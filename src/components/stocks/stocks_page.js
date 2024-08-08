@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import itcLogo from "../../assets/image/main/itc.png";
 
 const StocksPage = () => {
   const [year, setYear] = useState(1);
@@ -201,7 +202,7 @@ const StocksPage = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="src/assets/image/main/itc.png"
+              src={itcLogo}
               alt="IT-Center"
               className="itclogo"
               width="100%"
