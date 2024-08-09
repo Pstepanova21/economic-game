@@ -90,9 +90,7 @@ select {
   margin-bottom: 30px;
 }
 .doubleblock {
-  margin-left: 10%;
-  margin-right: 10%;
-  display: flex;
+  margin: 10%;
 }
 .rainbow-animated {
   background: linear-gradient(

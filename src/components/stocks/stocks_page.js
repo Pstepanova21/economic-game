@@ -50,7 +50,7 @@ import kftm6 from "../../assets/image/stocks/kftm 6 год.png";
 import kftm7 from "../../assets/image/stocks/kftm 7 год.png";
 
 import stocksBanner from "../../assets/image/stocksbanner.png";
-import itcLogo from "../../assets/image/main/itc.png";
+import itcLogo from "../../assets/image/icon/itc.png";
 
 // Функция для получения нужного изображения в зависимости от года
 const getStockImage = (year, stockType) => {
@@ -132,17 +132,21 @@ const StocksPage = () => {
   return (
     <div>
       <div className="full">
-        <div className="halfblock">
-          <h2 className="blockname">ВЫБЕРИТЕ ГОД:</h2>
-          <select id="year" value={year} onChange={handleYearChange}>
-            <option value={1}>Год 1</option>
-            <option value={2}>Год 2</option>
-            <option value={3}>Год 3</option>
-            <option value={4}>Год 4</option>
-            <option value={5}>Год 5</option>
-            <option value={6}>Год 6</option>
-            <option value={7}>Год 7</option>
-          </select>
+        <div className="settings-container">
+          <form style={{ width: "100%", padding: "15px" }}>
+            <div className="halfblock">
+              <h2 className="blockname">ВЫБЕРИТЕ ГОД:</h2>
+              <select id="year" value={year} onChange={handleYearChange}>
+                <option value={1}>Год 1</option>
+                <option value={2}>Год 2</option>
+                <option value={3}>Год 3</option>
+                <option value={4}>Год 4</option>
+                <option value={5}>Год 5</option>
+                <option value={6}>Год 6</option>
+                <option value={7}>Год 7</option>
+              </select>
+            </div>
+          </form>
         </div>
         <div className="doubleblock">
           <div className="halfblock">
