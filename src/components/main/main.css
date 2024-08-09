@@ -6,14 +6,9 @@
   src: url("../../assets/Donpoligrafbum-Bold.otf");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .gridsection {
   align-content: start;
-  background-color: oklch(0.95 0.01 80);
+  background-color: aliceblue; /* Вот этот цвет */
   display: grid;
   justify-content: center;
   padding-top: 230px;
@@ -63,7 +58,6 @@ img.grid {
   object-fit: cover;
 }
 main.grid {
-  background-color: var(--bgc, #f2eee7);
   block-size: auto;
   container-type: inline-size;
   display: grid;
@@ -80,7 +74,6 @@ a {
 
 body {
   font: normal 18px "Open Sans", sans-serif;
-  background-color: oklch(0.95 0.01 80);
   color: #333;
 }
 
@@ -89,7 +82,7 @@ main.grid {
 }
 
 .footer {
-  background-color: #000000;
+  background: #1c1c1c;
   height: 121px;
   position: relative;
   padding: 20px;

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import itcIcon from "../../assets/image/icon/itc.png";
 import itcLogo from "../../assets/image/main/itc.png";
 
 const Authorization = () => {
@@ -18,9 +17,6 @@ const Authorization = () => {
 
   return (
     <div>
-      <header>
-        <img src={itcIcon} alt="ITC Icon" />
-      </header>
       <div className="auth-container">
         <form onSubmit={handleSubmit} className="transparent">
           <div className="l_form-inner">

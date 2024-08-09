@@ -3,8 +3,6 @@
   display: none;
 }
 
-
-
 @media (max-width: 768px) {
   .navigator {
     display: none;
@@ -17,6 +15,7 @@
 
   .desktop-header {
     font-size: 10px;
+    background: #1c1c1c;
     text-align: center;
     margin-top: 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -28,47 +27,47 @@
     gap: 0;
   }
 
- /*768px*/
-    @media screen and (max-width: 768px) {
-        .head_logo {
-            width: 20%;
-            height: 80%;
-        }
+  /*768px*/
+  @media screen and (max-width: 768px) {
+    .head_logo {
+      width: 20%;
+      height: 80%;
+    }
 
-        .main_header {
-            font-size: 32px;
-            margin-left: 20px;
-        }
+    .main_header {
+      font-size: 32px;
+      margin-left: 20px;
     }
-    @media screen and (max-width: 428px) {
-        .main_header {
-            font-size: 18px;
-            height: 80%;
-        }
+  }
+  @media screen and (max-width: 428px) {
+    .main_header {
+      font-size: 18px;
+      height: 80%;
     }
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .head_logo {
-        width: 30%;
-        height: 80%;
-    }
+  .head_logo {
+    width: 30%;
+    height: 80%;
+  }
 
-    .main_header {
-        margin-top: 28px;
-        margin: 0 auto;
-    }
+  .main_header {
+    margin-top: 28px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 535px) {
-    .main_header {
-        margin-top: 10px;
-    }
+  .main_header {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 328px) {
-    .main_header {
-        margin-top: 20px;
-        font-size: 24px;
-    }
+  .main_header {
+    margin-top: 20px;
+    font-size: 24px;
+  }
 }

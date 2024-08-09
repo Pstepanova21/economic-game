@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC");
 @font-face {
-    font-family: "Donpoligrafbum Bold";
-    src: url("../../assets/Donpoligrafbum-Bold.otf");
+  font-family: "Donpoligrafbum Bold";
+  src: url("../../assets/Donpoligrafbum-Bold.otf");
 }
-
 
 * {
   margin: 0;
@@ -20,12 +19,12 @@ b {
 }
 
 .main_header {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 body {
-  font: normal 18px 'Open Sans', sans-serif;
-  background: #fafafa;
+  font: normal 18px "Open Sans", sans-serif;
+  background: aliceblue;
   color: #333;
 }
 
@@ -35,7 +34,8 @@ IMG.displayed {
   margin-right: auto;
   padding-top: 5px;
   width: 6%;
-  height: 6%;}
+  height: 6%;
+}
 
 .desktop-header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -57,6 +57,7 @@ IMG.displayed {
 
 nav {
   max-width: 800px;
+  color: #ffffff;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -69,20 +70,20 @@ nav a {
   position: relative;
 }
 
-   nav a::after {
-     content: '';
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right:0;
-     height: 2px;
-     transform: scaleX(0);
-     background: #333;
-     transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
-   }
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  transform: scaleX(0);
+  background: #333;
+  transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
 
-nav a:hover::after{
-  transform: scaleX(1)
+nav a:hover::after {
+  transform: scaleX(1);
 }
 
 .container-header {
@@ -93,7 +94,7 @@ nav a:hover::after{
   padding-top: 10px;
 }
 .container-header img {
-  margin-right: 20px; 
+  margin-right: 20px; /* Отступ между картинкой и текстом */
 }
 .main_header .year_20 {
   color: #0d41b3;
@@ -101,7 +102,6 @@ nav a:hover::after{
 .main_header .year_24 {
   color: #b63910;
 }
-
 
 @media (max-width: 768px) {
   img.displayed {
@@ -116,35 +116,34 @@ nav a:hover::after{
   }
 }
 
- /*768px*/
-    @media screen and (max-width: 768px) {
-        .desktop-header {
-            font-size: 32px;
-        }
-    }
-    @media screen and (max-width: 428px) {
-        .desktop-header {
-            font-size: 18px;
-        }
-    }
-
+/*768px*/
+@media screen and (max-width: 768px) {
+  .desktop-header {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .desktop-header {
+    font-size: 18px;
+  }
+}
 
 @media screen and (max-width: 600px) {
-    .desktop-header {
-        margin-top: 28px;
-        margin: 0 auto;
-    }
+  .desktop-header {
+    margin-top: 28px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 535px) {
-    .desktop-header {
-        margin-top: 10px;
-    }
+  .desktop-header {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 328px) {
-    .desktop-header {
-        margin-top: 20px;
-        font-size: 24px;
-    }
+  .desktop-header {
+    margin-top: 20px;
+    font-size: 24px;
+  }
 }

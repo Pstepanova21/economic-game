@@ -85,7 +85,9 @@ h2.winner {
 select {
   font-family: "Jost", sans-serif;
   font-size: 15px;
-  width: 100%;
+  width: 30%;
+  margin-left: 10px;
+  margin-bottom: 30px;
 }
 .doubleblock {
   margin-left: 10%;
@@ -109,11 +111,11 @@ select {
 }
 
 .full {
-  padding-top: 230px;
+  padding-top: 270px;
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #1c1c1c;
   height: 121px;
   margin-top: 10px;
   bottom: 0;
