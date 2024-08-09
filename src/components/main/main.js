@@ -100,7 +100,12 @@ const HomePage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={itcImage} alt="IT-Center" width="100%" />
+            <img
+              src={itcImage}
+              alt="IT-Center"
+              className="itcenterimg"
+              width="100%"
+            />
           </a>
         </div>
         <h2 className="foot">
