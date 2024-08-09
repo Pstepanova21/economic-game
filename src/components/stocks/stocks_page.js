@@ -133,7 +133,7 @@ const StocksPage = () => {
     <div>
       <div className="full">
         <div className="halfblock">
-          <h2 htmlFor="blockname">Выберите год:</h2>
+          <h2 className="blockname">ВЫБЕРИТЕ ГОД:</h2>
           <select id="year" value={year} onChange={handleYearChange}>
             <option value={1}>Год 1</option>
             <option value={2}>Год 2</option>
