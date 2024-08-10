@@ -103,7 +103,7 @@ const HomePage = () => {
             <img
               src={itcImage}
               alt="IT-Center"
-              className="itcenterimg"
+              className="itclogo"
               width="100%"
             />
           </a>

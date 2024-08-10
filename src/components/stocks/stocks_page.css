@@ -122,34 +122,9 @@ select {
   overflow: hidden;
 }
 
-.credits {
-  margin: 0 auto;
-  top: auto;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 146px;
-  height: 80px;
-  background: black;
-}
-
 a {
   text-decoration: none;
   color: inherit;
-}
-
-h2.foot {
-  font-family: "Jost", sans-serif;
-  letter-spacing: -0.05em;
-  font-size: 22px;
-  margin: 0;
-  text-transform: uppercase;
-  color: #ffffff;
-  transform: rotate(45deg);
-  position: relative;
-  left: 50%;
-  bottom: 10%;
-  max-width: 1100px;
 }
 
 @keyframes textShine {
