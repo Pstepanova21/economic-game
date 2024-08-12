@@ -182,6 +182,10 @@ nav a:hover::after{
   }
 
   .gridsection {
-    margin-bottom: 0px;
+    align-content: start;
+    background-color: aliceblue; /* Вот этот цвет */
+    display: grid;
+    justify-content: center;
+    padding-top: 150px;
   }
 }

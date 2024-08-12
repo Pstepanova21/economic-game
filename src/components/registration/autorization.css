@@ -78,7 +78,7 @@ h2.blockname {
   height: 100%;
   align-items: center;
   flex-direction: column;
-  padding: 388px 0 170px 0;
+  padding: 310px 0 260px 0;
 }
 
 select {
@@ -130,5 +130,16 @@ a {
     bottom: 95%;
     /* bottom: 1%; */
     /* margin-bottom: 10px; */
+  }
+  .auth-container {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding: 310px 0 300px 0;
   }
 }
