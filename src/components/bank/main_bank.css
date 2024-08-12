@@ -1,17 +1,16 @@
 @import url(bank.css);
 /* @import url(gamestation.css);*/
 
-header{
-  background: #FFF;
+header {
+  background: #fff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.head{
+.head {
   display: inline-flex;
 }
 
-
-.navigator{
+.navigator {
   display: flex;
   align-items: flex-start;
   flex-wrap: nowrap;
@@ -20,7 +19,7 @@ header{
   margin-top: 10px;
 }
 
-.navigator_text{
+.navigator_text {
   color: #000;
   text-align: center;
   font-size: 28px;
@@ -30,23 +29,22 @@ header{
   line-height: normal;
   height: 100%;
 }
-.navigator_text_href{
+.navigator_text_href {
   line-height: 100%;
   text-decoration: none;
 }
 
-.navigator_item{
+.navigator_item {
   width: 40%;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  background: #FFF;
+  background: #fff;
   text-decoration: none;
 }
-.main_header{
+.main_header {
   color: rgba(0, 0, 0, 0.68);
   font-size: 65px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: auto;
-  }
+}
