@@ -6,10 +6,6 @@ import itcImage from "../../assets/image/main/itc.png";
 const ManualPage = () => {
   return (
     <div>
-      <header>
-        {/* Здесь вы можете включить базовый компонент или логику */}
-      </header>
-
       <div className="full">
         <div className="banner-container">
           <div className="banner">
