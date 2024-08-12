@@ -56,14 +56,8 @@
 
 @media screen and (max-width: 535px) {
   .main_header {
-    margin-top: 20px;
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 535px) {
-  .main_header {
-    margin-top: 20px;
-    font-size: 35px;
+    margin-top: 10px;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 328px) {
