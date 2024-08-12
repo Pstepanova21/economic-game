@@ -35,8 +35,8 @@
     }
 
     .main_header {
-      font-size: 32px;
-      margin-left: 20px;
+      font-size: 25px;
+      margin-top: 10px;
     }
   }
   @media screen and (max-width: 428px) {
@@ -48,25 +48,24 @@
 }
 
 @media screen and (max-width: 600px) {
-  .head_logo {
-    width: 30%;
-    height: 80%;
-  }
-
   .main_header {
-    margin-top: 28px;
-    margin: 0 auto;
-    font-size: 24px;
+    margin-top: 20px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 535px) {
   .main_header {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 15px;
   }
 }
-
+@media screen and (max-width: 535px) {
+  .main_header {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 328px) {
   .main_header {
     margin-top: 20px;

@@ -1,88 +1,87 @@
 /* Общие стили */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 /* Стили для навигационного меню */
 nav {
-    background-color: #333;
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: #7C6699;
+  background-color: #7c6699;
 }
-
 
 /* Стили для таблицы */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-table th, table td {
-    padding: 10px 15px;
-    text-align: center;
+table th,
+table td {
+  padding: 10px 15px;
+  text-align: center;
 }
 
 table th {
-    background-color: #7C6699;
-    color: #fff;
+  background-color: #7c6699;
+  color: #fff;
 }
 
 table tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 table tr:nth-child(odd) {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 table tr:hover {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 /* Стили для заголовка */
 h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
 }

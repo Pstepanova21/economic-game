@@ -135,6 +135,27 @@ a {
     background-position: 100% 50%;
   }
 }
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 912px) {
+  .footer {
+    margin-top: 260px;
+  }
+}
+@media screen and (max-width: 855px) {
+  .footer {
+    background-color: #1c1c1c;
+    height: 121px;
+    margin-top: 210px;
+    bottom: 0;
+    padding: 20px;
+    padding-bottom: 35px;
+    overflow: hidden;
+  }
+}
 @media screen and (max-width: 540px) {
   .doubleblock {
     margin: 0;
@@ -199,5 +220,10 @@ a {
 
   .footer {
     margin-top: 7px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .footer {
+    margin-top: 20px;
   }
 }
