@@ -22,32 +22,11 @@ const ManualPage = () => {
               <p id="banner-description" className="banner-desc">
                 <span className="rainbow-animated">
                   <a
-                    href="https://vk.com/storkych"
+                    href="https://vk.com/polina.stepanova1"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    @storkych
-                  </a>
-                  <a
-                    href="https://vk.com/cornof"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @Civa
-                  </a>
-                  <a
-                    href="https://vk.com/muteallcreeps"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @temq
-                  </a>
-                  <a
-                    href="https://vk.com/tokyo.simp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @chips
+                    @polina7741
                   </a>
                   <a
                     href="https://vk.com/baeli1"
@@ -55,34 +34,6 @@ const ManualPage = () => {
                     rel="noopener noreferrer"
                   >
                     @Betty
-                  </a>
-                  <a
-                    href="https://vk.com/geronimo_slogan"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @geronimo
-                  </a>
-                  <a
-                    href="https://vk.com/d_arya_n"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @Gosha
-                  </a>
-                  <a
-                    href="https://vk.com/je_marie"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @je_marie
-                  </a>
-                  <a
-                    href="https://vk.com/sayana_ni"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @sayana1707
                   </a>
                 </span>
               </p>
@@ -104,46 +55,11 @@ const ManualPage = () => {
                     @Max.x__x
                   </a>
                   <a
-                    href="https://vk.com/seriousad"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @SeriouSad
-                  </a>
-                  <a
                     href="https://m.vk.com/juliamakky"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     @Juulka
-                  </a>
-                  <a
-                    href="https://vk.com/lunivilen"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @lunivilen
-                  </a>
-                  <a
-                    href="https://vk.com/polinarb"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @Leo
-                  </a>
-                  <a
-                    href="https://vk.com/6awipishka9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @AwipishkA
-                  </a>
-                  <a
-                    href="https://vk.com/akinovdeniska"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @hikashi
                   </a>
                 </span>
               </p>
